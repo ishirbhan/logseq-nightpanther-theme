@@ -53,7 +53,7 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--ls-title-font-family:          'AvenirNext-UltraLight', sans-serif;
 	--ls-title-font-weight:          400;
 	--ls-page-text-size:             1em; /* page font size */
-	--ls-page-title-size:            2em; /* page title font size */
+	--ls-page-title-size:            36px; /* page title font size */
 	--ls-page-title-line-height:     1.3em;
 	--ls-orange-color:               #f7e81d;
 	--ls-orange-color-tp:            #f7e81d44;
@@ -147,10 +147,11 @@ body {
 	-webkit-font-smoothing: auto;
 }
 
-h1.title {
+h1.title, h1.title input {
    color: var(--ls-grey-blue);
    font-family: var(--ls-title-font-family); 
    font-weight: var(--ls-title-font-weight);
+   font-size: var(--ls-page-title-size);
    /* border-bottom: 1px solid var(--ls-shark); */
    line-height: 1.3em;
    width: 100%;
