@@ -1,0 +1,16 @@
+{
+	"name": "logseq-nightpanther-theme",
+	"author": "Ishir Bhan",
+	"version": "v0.1",
+	"description": "A unique theme ",
+	"logseq": { "themes": [{ "name": "logseq-nightpanther-theme", "url": "./custom.css", "description": "Dark theme inspired by Panic Mode template" }], "id": "nightpanther_theme", "title": "Nightpanther theme", "icon": "./assets/nightpanther-logo.png" },
+	"license": "MIT",
+	"devDependencies": { "@semantic-release/changelog": "^0.0.1", "@semantic-release/github": "^0.0.1", "cz-conventional-changelog": "0.0.1", "semantic-release": "^0.0.1" },
+	"scripts": { "semantic-release": "semantic-release", "commit": "cz" },
+	"release": { "branches": ["main", "next"] },
+	"repository": { "type": "git", "url": "https://github.com/ishirbhan/logseq-nightpanther-theme.git" },
+	"config": { "commitizen": { "path": "./node_modules/cz-conventional-changelog" } },
+	"repo": "ishirbhan/logseq-nightpanther-theme",
+	"title": "Nightpanther theme",
+	"effect": false
+}
