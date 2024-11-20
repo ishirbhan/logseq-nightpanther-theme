@@ -14,8 +14,8 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	/* CodeMirror root */
 
 	--background: #eeeeee;
-	--light-background: rgba(0, 33, 52, 1);
-	--lighter-background: rgba(0, 216, 254, 0.5);
+	--light-background: #222;
+	--lighter-background: #666;
 	--link-text-color: rgba(84, 193, 220, 1);
 	--dark-background: #242424;
 	--darker-background: #191a21;
