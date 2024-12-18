@@ -50,9 +50,10 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--ls-border-radius-medium: 6px;
 	
 	--ls-font-family:                'AvenirNext-Regular', sans-serif;
-	--ls-header-font-family:         'AvenirNext-Light', sans-serif;
+	--ls-header-font-family:         'AvenirNext-Regular', sans-serif;
 	--ls-title-font-family:          'AvenirNext-UltraLight', sans-serif;
 	--ls-title-font-weight:          400;
+	--ls-header-font-weight:		 normal;
 	--ls-page-text-size:             1em; /* page font size */
 	--ls-page-title-size:            36px; /* page title font size */
 	--ls-page-title-line-height:     1.3em;
@@ -168,7 +169,7 @@ h1.title, h1.title input {
 
 .editor-inner .uniline-block:is(.h1, .h2, .h3, .h4, .h5, .h6), .ls-block :is(h1,h2,h3,h4,h5,h6) {
    font-family: var(--ls-header-font-family); 
-   font-weight: var(--ls-title-font-weight);
+   font-weight: var(--ls-header-font-weight);
 }
 
 a {
@@ -238,7 +239,6 @@ mark {
 .ls-block h4,
 .ls-block h5,
 .ls-block h6 {
-	font-weight: 400;
 	color: var(--ls-header-color);
 }
 
