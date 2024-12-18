@@ -50,6 +50,7 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--ls-border-radius-medium: 6px;
 	
 	--ls-font-family:                'AvenirNext-Regular', sans-serif;
+	--ls-header-font-family:         'AvenirNext-Light', sans-serif;
 	--ls-title-font-family:          'AvenirNext-UltraLight', sans-serif;
 	--ls-title-font-weight:          400;
 	--ls-page-text-size:             1em; /* page font size */
@@ -61,6 +62,7 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--ls-soft-orange-color-tp:       #ffc83299;
 	--ls-deep-orange-color:			 #F27200;
 	--ls-deep-orange-color-tp:		 #F2720099;
+	--ls-deeper-orange-color:	     #a94f00;
 	--ls-grey-purple:                #ccd2ff;
 	--ls-grey-blue:                  #b4d8fe;
 	--ls-cool-blue:                  #6bcafb;
@@ -138,6 +140,7 @@ html[data-theme="dark"] {
 	--ls-guideline-color: var(--ls-border-color);
 	
 	--ls-block-bullet-active-color:  var(--ls-soft-orange-color);
+	--ls-header-color: var(--ls-soft-orange-color);
 	
 	--ls-icon-color:                 #999999;
 	--ls-anchor-color:				#999999;
@@ -164,7 +167,7 @@ h1.title, h1.title input {
 }
 
 .editor-inner .uniline-block:is(.h1, .h2, .h3, .h4, .h5, .h6), .ls-block :is(h1,h2,h3,h4,h5,h6) {
-   font-family: var(--ls-title-font-family); 
+   font-family: var(--ls-header-font-family); 
    font-weight: var(--ls-title-font-weight);
 }
 
@@ -182,7 +185,7 @@ b {
 
 div[level="1"][haschild="true"]>div.block-main-container>div.block-content-wrapper.flex-col, b {
  /* font-family: 'AvenirNext-DemiBold', sans-serif; */
- color: var(--ls-soft-orange-color);
+ color: var(--ls-header-color);
 }
 
 .page-ref {
@@ -239,7 +242,7 @@ mark {
 .ls-block h5,
 .ls-block h6 {
 	font-weight: 400;
-	color: var(--yellow);
+	color: var(--ls-header-color);
 }
 
 /* Priority tag styling */
@@ -521,6 +524,7 @@ html[data-theme="light"] {
 	--ls-guideline-color: var(--ls-border-color);
 	
 	--ls-block-bullet-active-color:  var(--ls-deep-orange-color);
+	--ls-header-color: var(--ls-deep-orange-color);
 	
 	--ls-icon-color:                 #666666;
 	--ls-anchor-color:				#666666;
@@ -547,7 +551,7 @@ h1.title, h1.title input {
 }
 
 .editor-inner .uniline-block:is(.h1, .h2, .h3, .h4, .h5, .h6), .ls-block :is(h1,h2,h3,h4,h5,h6) {
-   font-family: var(--ls-title-font-family); 
+   font-family: var(--ls-header-font-family); 
    font-weight: var(--ls-title-font-weight);
 }
 
@@ -565,7 +569,7 @@ b {
 
 div[level="1"][haschild="true"]>div.block-main-container>div.block-content-wrapper.flex-col, b {
  /* font-family: 'AvenirNext-DemiBold', sans-serif; */
- color: var(--ls-deep-orange-color);
+ color: var(--ls-header-color);
 }
 
 .page-ref {
@@ -622,7 +626,8 @@ mark {
 .ls-block h5,
 .ls-block h6 {
 	font-weight: 400;
-	color: var(--yellow);
+	font-family: 
+	color: var(--ls-header-color);
 }
 
 /* Priority tag styling */
