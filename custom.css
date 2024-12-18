@@ -216,10 +216,7 @@ mark {
 	background-color: var(--red);
 }
 
-.dark-theme .form-checkbox {
-	border: 1px solid var(--ls-page-checkbox-border-color) !important;
-	border-radius: var(--ls-border-radius-low) !important;
-}
+
 
 .external-link {
 	color: var(--ls-link-text-color);
@@ -312,6 +309,37 @@ a.tag:hover {
 	background: var(--purple-hover);
 	color: var(--white-hover);
 }
+
+
+/* Changes all icons to the same color */
+.ti {
+	color: var(--ls-icon-color);
+}
+
+/* Changes sidebar link colors to the same color as the icons */
+.left-sidebar-inner a.item > span {
+	color: var(--ls-icon-color);
+}
+
+/* Journal Earlier link reveal  */
+a.fade-link {
+	color: var(--ls-icon-color);
+	font-weight: bold;
+	font-family: var(--ls-font-family);
+}
+
+/* Flash card styling */
+div[data-refs-self*='"card"'] {
+	background-color: var(--light-background);
+}
+
+/* Dropdown menu */
+#head > div.r.flex > div > div.dropdown-wrapper > div,
+#head > div.r.flex > div > div.dropdown-wrapper > div > a {
+	background-color: var(--ls-secondary-background-color);
+}
+
+/* DARK THEME SPECIFIC */
 
 html[data-theme="dark"] .CodeMirror {
 	line-height: 1.2;
@@ -434,33 +462,14 @@ html[data-theme="dark"] #right-sidebar pre.CodeMirror-line {
 	background: transparent;
 }
 
-/* Changes all icons to the same color */
-.ti {
-	color: var(--ls-icon-color);
+.dark-theme .form-checkbox {
+	border: 1px solid var(--ls-page-checkbox-border-color) !important;
+	border-radius: var(--ls-border-radius-low) !important;
 }
 
-/* Changes sidebar link colors to the same color as the icons */
-.left-sidebar-inner a.item > span {
-	color: var(--ls-icon-color);
-}
+/* END DARK THEME SPECIFIC */
 
-/* Journal Earlier link reveal  */
-a.fade-link {
-	color: var(--ls-icon-color);
-	font-weight: bold;
-	font-family: var(--ls-font-family);
-}
-
-/* Flash card styling */
-div[data-refs-self*='"card"'] {
-	background-color: var(--light-background);
-}
-
-/* Dropdown menu */
-#head > div.r.flex > div > div.dropdown-wrapper > div,
-#head > div.r.flex > div > div.dropdown-wrapper > div > a {
-	background-color: var(--ls-secondary-background-color);
-}
+/* LIGHT THEME SPECIFIC */
 
 .light-theme,
 html[data-theme="light"] {
@@ -528,174 +537,6 @@ html[data-theme="light"] {
 	
 	--ls-icon-color:                 #666666;
 	--ls-anchor-color:				#666666;
-}
-
-html,
-body {
-	font-weight: var(--ls-font-weight);
-	letter-spacing: var(--ls-font-letter-spacing);
-	line-height: var(--ls-font-line-height);
-	font-size: var(--ls-page-text-size);
-	background-color: var(--ls-primary-background-color);
-	-webkit-font-smoothing: auto;
-}
-
-h1.title, h1.title input {
-   color: var(--ls-picton);
-   font-family: var(--ls-title-font-family); 
-   font-weight: var(--ls-title-font-weight);
-   font-size: var(--ls-page-title-size);
-   /* border-bottom: 1px solid var(--ls-shark); */
-   line-height: 1.3em;
-   width: 100%;
-}
-
-.editor-inner .uniline-block:is(.h1, .h2, .h3, .h4, .h5, .h6), .ls-block :is(h1,h2,h3,h4,h5,h6) {
-   font-family: var(--ls-header-font-family); 
-   font-weight: var(--ls-title-font-weight);
-}
-
-a {
-	color: var(--ls-anchor-color)
-}
-
-i {
-	font-weight: italic;
-}
-
-b {
-	font-weight: bold;
-}
-
-div[level="1"][haschild="true"]>div.block-main-container>div.block-content-wrapper.flex-col, b {
- /* font-family: 'AvenirNext-DemiBold', sans-serif; */
- color: var(--ls-header-color);
-}
-
-.page-ref {
-   color: inherit;
-   border-bottom: 1px dashed  var(--ls-deep-orange-color-tp); ;
-}
-
-i:not(.ti) {
-   font-family: 'AvenirNext-Regular', sans-serif;
-	font-weight: 400;
-	color: var(--ls-orange-color);
-}
-
-mark {
-	background-color: var(--highlight-blue);
-	color: var(--white);
-}
-
-.bg-orange-400 {
-	background-color: var(--orange);
-}
-
-.bg-green-600 {
-	background-color: var(--green);
-}
-
-.bg-red-500 {
-	background-color: var(--red);
-}
-
-.dark-theme .form-checkbox {
-	border: 1px solid var(--ls-page-checkbox-border-color) !important;
-	border-radius: var(--ls-border-radius-low) !important;
-}
-
-.external-link {
-	color: var(--ls-link-text-color);
-	text-decoration: none;
-	border-bottom: none;
-}
-
-.timestamp-label + a:hover,
-.external-link:hover,
-.marker-switch:hover,
-.block-ref:hover,
-.page-ref:hover {
-	color: var(--white-hover);
-}
-
-.ls-block h1,
-.ls-block h2,
-.ls-block h3,
-.ls-block h4,
-.ls-block h5,
-.ls-block h6 {
-	font-weight: 400;
-	font-family: 
-	color: var(--ls-header-color);
-}
-
-/* Priority tag styling */
-.priority {
-	color: var(--ls-tag-text-color);
-	opacity: 1 !important;
-	font-size: 0px; /* Hide text */
-}
-
-.priority:hover,
-a.tooltip-priority:hover {
-	color: var(--ls-tag-text-hover-color);
-	opacity: 0.5;
-}
-
-a.priority[href="#/page/A"]:before {
-	content: "A";
-	background: var(--red);
-}
-
-a.priority[href="#/page/B"]:before {
-	content: "B";
-	background: var(--yellow);
-}
-
-a.priority[href="#/page/C"]:before {
-	content: "C";
-	background: var(--green);
-}
-
-a.priority:before {
-	font-size: 0.9rem;
-	font-weight: 400;
-	padding: 1px 4px 0px 3px;
-	margin: 0px 2px 0px 0px;
-	border-radius: var(--ls-border-radius-low);
-	color: var(--ls-primary-background-color);
-}
-
-a.tooltip-priority {
-	color: var(--ls-tag-text-color);
-}
-
-.Tooltip__label {
-	background: var(--ls-quinary-background-color);
-}
-
-.Tooltip__label::after {
-	border-bottom-color: var(--ls-quinary-background-color);
-}
-
-.page-reference .bracket {
-	color: var(--yellow);
-	opacity: 0.8;
-}
-
-a.tag {
-	background: var(--purple);
-	border-radius: 50px;
-	padding: 1px 8px;
-	color: #fff;
-	font-weight: 500;
-	font-size: 0.9rem;
-}
-
-a.tag:hover {
-	background: var(--purple-hover);
-	color: var(--white-hover);
 }
 
 html[data-theme="light"] .CodeMirror {
@@ -819,30 +660,4 @@ html[data-theme="light"] #right-sidebar pre.CodeMirror-line {
 	background: transparent;
 }
 
-/* Changes all icons to the same color */
-.ti {
-	color: var(--ls-icon-color);
-}
-
-/* Changes sidebar link colors to the same color as the icons */
-.left-sidebar-inner a.item > span {
-	color: var(--ls-icon-color);
-}
-
-/* Journal Earlier link reveal  */
-a.fade-link {
-	color: var(--ls-icon-color);
-	font-weight: bold;
-	font-family: var(--ls-font-family);
-}
-
-/* Flash card styling */
-div[data-refs-self*='"card"'] {
-	background-color: var(--light-background);
-}
-
-/* Dropdown menu */
-#head > div.r.flex > div > div.dropdown-wrapper > div,
-#head > div.r.flex > div > div.dropdown-wrapper > div > a {
-	background-color: var(--ls-secondary-background-color);
-}
+/* END LIGHT THEME SPECIFIC */
