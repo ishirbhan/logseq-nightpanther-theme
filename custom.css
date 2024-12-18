@@ -99,7 +99,7 @@ html[data-theme="dark"] {
 	--ls-table-tr-even-background-color: var(--light-background);
 
 	--ls-head-text-color: var(--white);
-	--ls-title-text-color: var(--white);
+	--ls-title-text-color: var(--ls-grey-blue);
 
 	--ls-link-text-color: var(--ls-soft-orange-color);
 	--ls-link-text-hover-color: var(--white-hover);
@@ -157,7 +157,7 @@ body {
 }
 
 h1.title, h1.title input {
-   color: var(--ls-grey-blue);
+   color: var(	--ls-title-text-color);
    font-family: var(--ls-title-font-family); 
    font-weight: var(--ls-title-font-weight);
    font-size: var(--ls-page-title-size);
@@ -492,7 +492,7 @@ html[data-theme="light"] {
 	--ls-table-tr-even-background-color: var(--light-background);
 
 	--ls-head-text-color: var(--white);
-	--ls-title-text-color: var(--white);
+	--ls-title-text-color: var(--ls-picton);
 
 	--ls-link-text-color: var(--ls-deep-orange-color);
 	--ls-link-text-hover-color: var(--white-hover);
