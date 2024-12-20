@@ -87,23 +87,9 @@ html[data-theme="dark"] {
 	--ls-quaternary-background-color: var(--light-background);
 	--ls-quinary-background-color: var(--darker-background);
 
-	--ls-active-primary-color: var(--white);
-	--ls-active-secondary-color: var(--white);
-
-	--ls-primary-text-color: var(--white);
-	--ls-secondary-text-color: var(--white-hover);
-
-	--ls-search-background-color: var(--background);
-	--ls-border-color: var(--comment);
-	--ls-secondary-border-color: var(--ls-border-color);
-	--ls-menu-hover-color: var(--light-background);
-	--ls-table-tr-even-background-color: var(--light-background);
-
-	--ls-head-text-color: var(--white);
 	--ls-title-text-color: var(--ls-grey-blue);
 
 	--ls-link-text-color: var(--ls-soft-orange-color);
-	--ls-link-text-hover-color: var(--white-hover);
 
 	--ls-link-ref-text-color: var(--blue);
 	--ls-link-ref-text-hover-color: var(--white-hover);
@@ -479,23 +465,11 @@ html[data-theme="light"] {
 	--ls-quaternary-background-color: var(--light-background);
 	--ls-quinary-background-color: var(--darker-background);
 
-	--ls-active-primary-color: var(--white);
-	--ls-active-secondary-color: var(--white);
 
-	--ls-primary-text-color: var(--white);
-	--ls-secondary-text-color: var(--white-hover);
-
-	--ls-search-background-color: var(--background);
-	--ls-border-color: var(--comment);
-	--ls-secondary-border-color: var(--ls-border-color);
-	--ls-menu-hover-color: var(--light-background);
-	--ls-table-tr-even-background-color: var(--light-background);
-
-	--ls-head-text-color: var(--white);
 	--ls-title-text-color: var(--ls-picton);
 
 	--ls-link-text-color: var(--ls-deep-orange-color);
-	--ls-link-text-hover-color: var(--white-hover);
+
 
 	--ls-link-ref-text-color: var(--blue);
 	--ls-link-ref-text-hover-color: var(--white-hover);
