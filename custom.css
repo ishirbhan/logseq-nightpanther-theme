@@ -7,11 +7,6 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 
 :root {
 
-	/* Bullet threading root (delete two lines below if you don't want bullet threds */
-	/* --ls-block-bullet-active-color: var(--yellow);
-	--ls-block-bullet-threading-width: 1px;
- */
-	/* CodeMirror root */
 
 	--background: #eeeeee;
 	--light-background: #222;
@@ -36,7 +31,6 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--checkbox-border-blue: rgba(38, 67, 104, 1);
 	--checkbox-check: rgba(246, 247, 238, 1);
 	--highlight-blue: rgba(45, 78, 120, 1);
-
 
 	--bracket-color: #8be9fd;
 
@@ -64,19 +58,8 @@ Original author: Ishir Bhan (http://github.com/ishirbhan)
 	--ls-deep-orange-color:			 #F27200;
 	--ls-deep-orange-color-tp:		 #F2720099;
 	--ls-deeper-orange-color:	     #a94f00;
-	--ls-grey-purple:                #ccd2ff;
 	--ls-grey-blue:                  #b4d8fe;
-	--ls-cool-blue:                  #6bcafb;
-	--ls-denim:              		#276ab3;
-	--ls-maya: 		              	#6bcafb;
 	--ls-picton: 		            #49a8fb;
-	--ls-black: 		                #000000;
-	--ls-vulcan: 		            #151617;
-	--ls-jungle: 		            #1e2022;
-	--ls-mutedblack: 	            #242424;
-	--ls-bunker: 		            #2c2d2f;
-	--ls-shark: 		                #363839;
-
 }
 
 .dark-theme,
@@ -148,7 +131,6 @@ h1.title, h1.title input {
    font-family: var(--ls-title-font-family); 
    font-weight: var(--ls-title-font-weight);
    font-size: var(--ls-page-title-size);
-   /* border-bottom: 1px solid var(--ls-shark); */
    line-height: 1.3em;
    width: 100%;
 }
@@ -464,7 +446,6 @@ html[data-theme="light"] {
 	--ls-tertiary-background-color: var(--lighter-background);
 	--ls-quaternary-background-color: var(--light-background);
 	--ls-quinary-background-color: var(--darker-background);
-
 
 	--ls-title-text-color: var(--ls-picton);
 
